@@ -1,0 +1,177 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 22,
+					"left": 23,
+					"width": 1020,
+					"height": 800,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Tab Control.4dm"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 204,
+					"left": 51,
+					"width": 966,
+					"height": 208,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 57,
+					"left": 49,
+					"width": 966,
+					"height": 48,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Web Area": {
+					"type": "webArea",
+					"left": 48,
+					"top": 187,
+					"width": 966,
+					"height": 611,
+					"webEngine": "embedded"
+				},
+				"Input": {
+					"type": "input",
+					"left": 516,
+					"top": 133,
+					"width": 216,
+					"height": 16,
+					"dataSource": "Form:C1466.id"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Meeting ID :",
+					"top": 134,
+					"left": 352,
+					"width": 144,
+					"height": 15,
+					"textAlign": "right"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 516,
+					"top": 161,
+					"width": 216,
+					"height": 16,
+					"dataSource": "Form:C1466.password"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Password :",
+					"top": 162,
+					"left": 352,
+					"width": 144,
+					"height": 15,
+					"textAlign": "right"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Start Zoom meeting",
+					"top": 141,
+					"left": 793,
+					"width": 221,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Test webcam",
+					"top": 141,
+					"left": 49,
+					"width": 221,
+					"height": 26,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm"
+				}
+			},
+			"entryOrder": [
+				"information1",
+				"Web Area",
+				"Input",
+				"Input1",
+				"Button",
+				"Button1"
+			]
+		}
+	],
+	"geometryStamp": 2541,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}
